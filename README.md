@@ -28,7 +28,7 @@ If you don't hava train.txt and val.txt in Main folder, copy `Gentxt.py` to your
 
 eg. If I want to train one object detection on helmet, my file tree can be like this image.
 
-![](https://raw.githubusercontent.com/MS-CSE-GCR/object_detection_on_azure/master/Image/tree.png)
+![](https://raw.githubusercontent.com/Iamvincible/Object_Detection_On_Azure/master/Image/tree.png)
 
 Make sure everything is well prepared, compress the VOCdevkit folder to a zip/tar file.
 
@@ -42,7 +42,7 @@ In the web page you need input some info to deploy a VM, you can type you own pa
 
 #### 2. Traditional UI
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FIamnvincible%2Fobject_detection_on_azure%2Fmaster%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FIamnvincible%2FObject_Detection_On_Azure%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
@@ -50,19 +50,19 @@ eg. If you click the first button to deploy, just fill in the Visual Machine Nam
 
 note. In some resource group or vm location, you may not access the url in the following step, because the custom script failed. If it happends, try eastus2.
 
-![](https://raw.githubusercontent.com/MS-CSE-GCR/object_detection_on_azure/master/Image/Create.png)
+![](https://raw.githubusercontent.com/Iamvincible/Object_Detection_On_Azure/master/Image/Create.png)
 ### Development
 After deployment, you can get an ip address in Azure Portal, open the url `http://<ip>:9999` in your browser. Login with password `msfthack` and you will see Yolo and Retinanet notebooks, choose one to open and follow the steps.
 And if you stop/restart the vm, next time you should login it through SSH, and run `jupyter notebook` in command line, when it's ready, visit the 9999 port.
 
 In the webpage you will see:
 
-![](https://raw.githubusercontent.com/MS-CSE-GCR/object_detection_on_azure/master/Image/Notebook.png)
+![](https://raw.githubusercontent.com/Iamvincible/Object_Detection_On_Azure/master/Image/Notebook.png)
 
 You should upload your dateset file in the Image folder, in the picture I uploaded two datesets. If you unzip the datasests, you will see the VOCdevkit folder.
 
-![](https://raw.githubusercontent.com/MS-CSE-GCR/object_detection_on_azure/master/Image/ImageFolder.png)
+![](https://raw.githubusercontent.com/Iamvincible/Object_Detection_On_Azure/master/Image/ImageFolder.png)
 
 In the VOCdevkit folder, you can see all your datasets' folder.
 
-![](https://raw.githubusercontent.com/MS-CSE-GCR/object_detection_on_azure/master/Image/datasets.png)
+![](https://raw.githubusercontent.com/Iamvincible/Object_Detection_On_Azure/master/Image/datasets.png)
